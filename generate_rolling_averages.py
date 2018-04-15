@@ -95,5 +95,5 @@ df_rolling_avg[['Season']] = df_rolling_avg[['Season']].astype('int')
 df_rolling_avg[['TeamID']] = df_rolling_avg[['TeamID']].astype('int')
 
 # Finally write the data out to .csv file
-df_rolling_avg.to_csv('rolling_average_data' + numAvgGames + '.csv', index=False)
+df_rolling_avg.to_csv('rolling_average_data' + str(numAvgGames) + '.csv', index=False)
 print('It took ' + str(time.time()-start) + 'seconds.')
